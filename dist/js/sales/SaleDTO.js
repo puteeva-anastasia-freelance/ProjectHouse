@@ -1,0 +1,1 @@
+"use strict";class SaleDTO{constructor(t,s,e,i){this.id=t,this.percent=s,this.name=e,this.term=i}}

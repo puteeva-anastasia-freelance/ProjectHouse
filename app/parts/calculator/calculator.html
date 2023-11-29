@@ -1,0 +1,67 @@
+<section class="calculator" id="calculator">
+	<div class="container">
+		<h2 class="h2" id="calculator-title">Онлайн калькулятор</h2>
+		<p class="txt calculator__txt">Узнайте примерную стоимость Вашего проекта</p>
+		<form class="calculator__wrap form-calculator">
+			<input type="hidden" name="name_form" value="Онлайн калькулятор">
+			<div class="calculator__question">
+				<label for="area" class="calculator__label">1. Введите планируемую площадь Вашего будущего дома
+					в&nbsp;м<sup>2</sup></label>
+				<input type="number" placeholder="Например, 140" id="area" class="calculator__input" min="1" name="area">
+			</div>
+			<div class="calculator__question">
+				<label for="floor" class="calculator__label">2. Сколько планируется этажей</label>
+				<input type="number" placeholder="Например, 2" id="floor" class="calculator__input" min="1" name="floor">
+			</div>
+			<div class="calculator__question">
+				<label for="project" class="calculator__label">3. Выберите тип проекта</label>
+				<select id="project" name="project">
+					<option class="service-empty" label="Выберите значение"></option>
+					<!-- Пункты услуг будут добавлены сюда с помощью JS -->
+					<option value="Нужна консультация">Нужна консультация</option>
+				</select>
+			</div>
+			<div class="calculator__question">
+				<label class="calculator__label">4. Отметьте, что из&nbsp;нижеперечисленного планируется в&nbsp;доме?</label>
+				<div class="calculator__choose">
+					<div class="calculator__checkbox">
+						<input type="checkbox" name="reconstruction-1" value="Подвал или цокольный этаж" id="basement"
+							class="calculator__checkbox-input">
+						<label for="basement" class="calculator__checkbox-label">Подвал или цокольный этаж</label>
+					</div>
+					<div class="calculator__checkbox">
+						<input type="checkbox" name="reconstruction-2" value="Гараж или навес для автомобиля" id="garage"
+							class="calculator__checkbox-input">
+						<label for="garage" class="calculator__checkbox-label">Гараж или навес для автомобиля</label>
+					</div>
+					<div class="calculator__checkbox">
+						<input type="checkbox" name="reconstruction-3" value="Терраса, балконы" id="terrace"
+							class="calculator__checkbox-input">
+						<label for="terrace" class="calculator__checkbox-label">Терраса, балконы</label>
+					</div>
+					<div class="calculator__checkbox">
+						<input type="text" placeholder="Впишите Ваш вариант" class="calculator__input" name="reconstruction-4">
+					</div>
+				</div>
+			</div>
+			<div class="calculator__question">
+				<label for="type-roof" class="calculator__label">5. Выберите тип кровли</label>
+				<select id="type-roof" name="type-roof">
+					<option label="Выберите значение"></option>
+					<option value="Скатная">Скатная</option>
+					<option value="Плоская">Плоская</option>
+					<option value="Еще не определились">Еще не&nbsp;определились</option>
+					<option value="Нужна консультация">Нужна консультация</option>
+				</select>
+			</div>
+			<div class="calculator__question calculator__question-phone">
+				<label for="phone" class="calculator__label">6. Ваш номер телефона*</label>
+				<input required class="calculator__input calculator__input-phone mask-phone" type="text"
+					placeholder="+375 (__)___-__-__" id="phone" name="phone">
+			</div>
+			<span class="txt calculator__error calculator__error-phone">Для отправки формы, пожалуйста, укажите Ваш номер
+				телефона</span>
+			<button type="submit" class="button__gradient calculator__button">рассчитать стоимость проекта</button>
+		</form>
+	</div>
+</section>

@@ -1,0 +1,35 @@
+.image
+	bottom: 0
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	height: 100%
+	width: 100%
+	z-index: 1000
+
+	&__body
+		align-items: center
+		display: flex
+		height: 100%
+		justify-content: center
+		margin: auto
+		width: auto
+
+	&__close
+		position: absolute
+		right: 20px
+		top: 25px
+
+		&-icon
+			stroke: $accent
+			transition: stroke .2s ease-in-out
+
+		&:hover
+			.image__close-icon
+				stroke: $blue
+
+	&__picture
+		height: 87%
+		width: 100%
+		object-fit: contain

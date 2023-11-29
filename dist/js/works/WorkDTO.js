@@ -1,0 +1,1 @@
+"use strict";class WorkDTO{constructor(i,s,t,a,e){this.id=i,this.name=s,this.image=t,this.imageBig=a,this.imageSmall=e}}
